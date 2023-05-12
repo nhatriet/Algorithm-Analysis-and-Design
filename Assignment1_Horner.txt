@@ -1,0 +1,27 @@
+P(x) = a0x­­n  + a1x­­n - 1 + a2x­­n - 2 +....+ an  					(1)                                                                      
+tại một trị số x nào đó. Trong (1) các hệ số ai là các số thực đã cho. Chúng ta viết lại (1) theo thuật toán Horner dưới dạng:
+            P(xo) = (...((a0x + a1)x+ a2x)+...+ an -1 )x + an     	(2)
+            Từ (2) ta nhận thấy :
+            P0 = a0
+            P1 = P0x + a1
+            P2 = P1x + a2
+            P3 = P2x + a3
+            ......................
+            P(x) = Pn = Pn-1x + an
+Tổng quát ta có :
+            Pk = Pk-1x + ak với k = 1, 2...n ; P0 = a0
+Do chúng ta chỉ quan tâm đến trị số của Pn nên trong các công thức truy hồi về sau chúng ta sẽ bỏ qua chỉ số k của P và viết gọn P := Px + ak với k = 0...n. Khi ta tính tới k = n thì P chính là giá trị cần tìm của đa thức khi đã cho x. Chúng ta thử các bước tính như sau :
+            Ban đầu                                P = 0
+            Bước 0            k = 0                P = ao
+            Bước 1            k = 1                P = aox + a1
+            Bước 2            k = 2                P = (aox + a1)x + a2
+            ........................................................................................
+            Bước n-1          k = n - 1            P = P(xo) = (...((aox + a1)x+a2x)+...+an-1)x
+            Bước n            k = n                P = P(xo) = (...((aox + a1)x+a2x)+...+an-1)x + an
+
+Input: 
+	k	( bậc cao nhất của đa thức )
+	a[i]	( các hệ số của mảng)
+	x
+Output: 
+	p	( giá trị của đa thức )
