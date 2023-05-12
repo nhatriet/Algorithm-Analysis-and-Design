@@ -1,0 +1,10 @@
+Cho 1 bàn cờ vua có kích thước n*n, ta biết rằng quân hậu có thể di chuyển theo chiều ngang, dọc, chéo. Vấn đề đặt ra rằng, có n quân hậu, cần đếm số cách đặt n quân hậu này lên bàn cờ sao cho với 2 quân hậu bất kì, chúng không "ăn" nhau.
+
+Input: dòng đầu ghi số bộ test. Mỗi bộ test ghi 1 số nguyên dương n duy nhất ( không quá 10 )
+	ví dụ: đối với bàn cờ 8x8 --> input nhập vào số 8
+Output: ghi kết quả mỗi bộ test ( 1 là vị trí đặt quân hậu ) và tổng số cách đặt quân hậu.
+	ví dụ: đối với bàn cờ 8x8 có tất thảy 92 cách giải. nhưng thực chất chỉ có 12 lời giải thật sự vì thuật toán không ghi nhận tính đối xứng.
+
+
+
+
