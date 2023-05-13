@@ -1,0 +1,16 @@
+Bài toán tháp Hà Nội là một trò chơi toán học gồm 3 cột và số đĩa nhiều hơn 1. Nhiệm vụ của trò chơi là di chuyển các đĩa có kích cỡ khác nhau sang cột khác sao cho vẫn đảm bảo thứ tự ban đầu của các đĩa: đĩa nhỏ nằm trên đĩa lớn. 
+
+Mục đích của bài toán: 
+Người chơi được cho ba cái cọc và một số đĩa có kích thước khác nhau có thể cho vào các cọc này. Ban đầu sắp xếp các đĩa theo trật tự kích thước vào một cọc sao cho đĩa nhỏ nhất nằm trên cùng. Người chơi phải di chuyển toàn bộ số đĩa sang một cọc khác, tuân theo các quy tắc sau:
+	Một lần chỉ được di chuyển một đĩa
+	Một đĩa chỉ có thể được đặt lên một đĩa lớn hơn
+
+Mô tả bài toán:
+Qui ước đặt tên 3 cột là A B C để tiện theo dõi. Yêu cầu bài toán là chuyển n chiếc đĩa từ cột A sang cột C
+Ta có cách giải như sau:
+	Đầu tiên ta lấy cột C làm cọc trung gian. Chuyển n-1 chiếc đĩa sang cột B.
+	Ta chuyển chiếc đĩa lớn nhất sang cột C
+	Lấy cột A làm cột trung gian chuyển n-1 chiếc đĩa từ cột B sang cột C
+
+Input: Nhập vào n số đĩa
+Output: Thứ tự chuyển đổi đĩa
