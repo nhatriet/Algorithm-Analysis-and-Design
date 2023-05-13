@@ -5,7 +5,7 @@ Input của bài toán có thể nhập như sau:
 	Số đồ vật giới hạn: 	n = 4
 	Trọng lượng giới hạn: 	W = 4
 	Trọng lượng của từng đồ vật lần lượt là: 	7	4	3	2
-	Số công dụng của từng đồ vật lần lượt là: 9	4	3	1
+	Số công dụng của từng đồ vật lần lượt là: 	9	4	3	1
 Output:
 	Xuất hiện bảng tính sử dụng phương pháp quy hoạch động
 	Các giá trị được in, gồm:
