@@ -1,0 +1,17 @@
+Bài toán tìm chuỗi chung dài nhất là một bài toán kinh điển cho việc ứng dụng thuật toán quy hoạch động để giải quyết.
+Công thức QHD bài toán chuỗi chung dài nhất là:
+	Nếu A[i] == B[j] thì L[i][j] = L[i-1][j-1] + 1
+	Ngược lại thì L[i][j] = max ( L[i][j], L[i][j-1] )
+Trong đó,	A và B là 2 chuỗi cần xét
+		i, j tương ứng là chỉ số hàng và cột của mảng kết quả L
+		Hàm max để tìm ra số lớn hơn trong 2 số, trường hợp bằng nhau thì lấy số đầu tiên - L[i-1][j-1]
+
+Thuật toán:
+	Bắt đầu duyệt từ i = n , j = m. Phần tử thứ i của xâu a sẽ là a[i-1], thứ j của xâu b sẽ là b[j-1]
+	Nếu a[i-1] == b[j-1] ta sẽ lưu lại con chung a[i-1] và giảm i và j đi 1 đơn vị
+	Nếu a[i-1] != b[j-1] có 2 trường hợp:
+		– Nếu L[i-1][j] >= L[i][j-1] thì giảm i 1 đơn vị
+		– Ngược lại giảm j đi 1 đơn vị
+
+Input: Lần lượt nhập vào xâu ( chuỗi ) A, B
+Output: Tính được độ dài xâu lớn nhất và in ra xâu con 
