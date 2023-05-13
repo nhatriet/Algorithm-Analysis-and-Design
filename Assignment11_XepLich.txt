@@ -1,0 +1,15 @@
+Bài toán lập lịch cũng là một bài toán ví dụ của giải thuật tham lam.
+
+Mô tả bài toán: Công ty A dự kiến tổ chức N cuộc họp, cuộc họp thứ k bắt đầu từ thời điểm Sk và kết thúc ở thời điểm Fk. Chỉ có 1 phòng họp nên không thể tổ chức 2 cuộc họp cùng 1 lúc, vì vậy phải loại bỏ một số cuộc họp nếu chúng có thời gian họp bị chồng lên nhau. Tìm cách tổ chức nhiều cuộc họp nhất có thể.
+
+Thuật toán:
+	Sắp xếp các cuộc họp tăng dần theo thời điểm kết thúc.
+	Lần lượt chọn các cuộc họp theo tiêu chí: bắt đầu sau cuộc họp trước đó ( tránh xung đột ), kết thúc sớm nất có 	thể.
+
+Input: đầu vào đã được khai báo sẵn !!! 
+	s[MAX]: thời điểm bắt đầu
+	f[MAX]: thời điểm kết thúc
+	a[MAX]: mảng khi chưa được sắp xếp
+Output: Mảng A sau khi sắp xếp và các cuộc họp được chọn
+
+

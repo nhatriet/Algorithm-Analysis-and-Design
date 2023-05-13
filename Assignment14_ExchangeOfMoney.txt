@@ -1,0 +1,17 @@
+Bài toán đổi tiền sử dụng ý tưởng tham lam (greedy).
+Mô tả bài toán: Một cửa hàng bán lẻ sử dụng các đồng xu 1, 5, 10, 25, 100 cents để trả lại tiền thừa cho khách. Đưa ra cách thức trả cho khách sử dụng số lượng đồng tiền là ít nhất.
+ví dụ: 
+	Cần đổi 34 cents thì sử dụng 1 đồng 25, 1 đồng 5, 4 đồng 1
+	Cần đổi 2 usd 89 cents thì sử dụng 2 đồng 1 usd, 3 đồng 25, 1 đồng 10, 4 đồng 1
+
+Lập luận bài toán: 
+Bài toán có cấu hình A = ( a1, a2, a3, a4, a5 ), có F(A) = a1+a2+a3+a4+a5 là min.
+--> Ta nhận thấy giá trị a1 càng lớn càng tốt ( giá trị đồng 100 )
+--> Sau khi không thể dùng thêm các đồng 100, ta nhận thấy giá trị a2 càng lớn càng tốt, hoặc phải thay thế một đồng xu 25 cents bằng nhiều đồng xu mệnh giá nhỏ hơn.
+--> Khi không dùng được các đồng xu 100 cents và 25 cents: ta thấy a3 càng lớn càng tốt, hoặc phải thay thế đồng 10 xu bằng các đồng xu mệnh giá bé hơn.
+
+Như vậy, "tham lam" ở đây chính là dùng càng nhiều tiền mệnh giá cao càng tốt.
+
+
+Input: nhập vào số tiền cần đổi ( ví dụ: N = 140 )
+Output: số xu được quy đổi tối ưu nhất.
