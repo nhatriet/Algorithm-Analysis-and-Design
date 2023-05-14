@@ -1,0 +1,14 @@
+Bài toán tìm đường đi ngắn nhất sử dụng thuật toán Dijkstra.Thuật toán này nhằm mục đích tìm đường đi ngắn nhất trong đồ thị có cạnh với trọng số dương, bằng cách xét các cạnh và so sánh 2 đường đi sẵn có với đường qua cả 3 đỉnh.
+Bài toán: Cho một đồ thị có trọng số (đặt tên là đồ thị G). Mục tiêu là tìm đường đi ngắn nhất từ một đỉnh cho trước đến các đỉnh còn lại của đồ thị G.
+
+Giả thuật các bước:
+	B1. Đánh dấu tất các node dự kiến: Đặt khoảng cách từ nút nguồn tới nút 0 là nguồn, và đặt là vô hạn với các nút 	khác.
+	B2. Tiến hành chạy lặp (loop)
+		Trích xuất nút N là nút có khoảng cách nhỏ nhất
+		Thêm liên kết tới nút N vào cây đường đi ngắn nhất
+		Sau đó tiến hành tối ưu các đường đi cạnh N bằng cách thử kéo dài cạnh
+
+Input: dữ liệu đầu vào đã được nhập sẵn
+Output: 
+	Path ( a -> b ): Minium cost = c, Route = [ ]
+	--> Con đường từ đỉnh a đến đỉnh b có trọng số nhỏ nhất là c, và có đường đi là Route.
